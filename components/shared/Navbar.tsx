@@ -31,8 +31,8 @@ const Navbar: React.FC = () => {
                 </Link>
               </li>
               <li className="bg-gray-100 rounded px-3 py-2 mb-2">
-                <Link href={`/blogs`} className="mr-5 hover:text-gray-900">
-                  Blogs
+                <Link href={`/blog`} className="mr-5 hover:text-gray-900">
+                  Blog
                 </Link>
               </li>
               <li className="bg-gray-100 rounded px-3 py-2 mb-2">
@@ -59,8 +59,8 @@ const Navbar: React.FC = () => {
             <Link href={`/integration`} className="mr-5 hover:text-gray-900">
               Integration
             </Link>
-            <Link href={`/blogs`} className="mr-5 hover:text-gray-900">
-              Blogs
+            <Link href={`/blog`} className="mr-5 hover:text-gray-900">
+              Blog
             </Link>
             <Link href={`/contactus`} className="mr-5 hover:text-gray-900">
               Contact Us
