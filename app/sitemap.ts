@@ -13,7 +13,7 @@ function generateUrlArrayFromBlogs(
   }));
 }
 
-export default async function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogs = await api.blog.getBlogs();
 
   const blogArr = generateUrlArrayFromBlogs(blogs);
