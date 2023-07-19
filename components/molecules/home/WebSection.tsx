@@ -91,13 +91,15 @@ const WebSection: React.FC = () => {
           </div>
           <div className="flex-1 md:mt-0 mt-10 md:ml-32 ml-0">
             <h2 className="md:text-6xl text-5xl font-bold">
-              Innovate your way to success with your next app
+              Unleashing Native Experiences with Next-Gen Web Apps
             </h2>
             <p className=" mt-8 text-gray-900">
-              From social media to online shopping, mobile apps have
-              revolutionized the way we interact and conduct business. As such,
-              developing innovative apps has become a lucrative and highly
-              sought-after skill.
+              Welcome to the dawn of a groundbreaking era in web development! At
+              our cutting-edge website, we&apos;re thrilled to introduce you to
+              the awe-inspiring world of next-generation web apps that transcend
+              all boundaries. Say goodbye to the limitations of traditional
+              websites and embrace a revolutionary experience that rivals even
+              the finest mobile applications.
             </p>
             <Link href="/contactus">
               <div className="flex items-center border w-fit px-5 py-1 mt-6 rounded-3xl hover:bg-gray-100">
