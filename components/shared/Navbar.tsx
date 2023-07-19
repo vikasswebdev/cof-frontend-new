@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
           </nav>
         </div>
       )}
-      <header className="text-gray-600 body-font border-b sticky top-0 bg-white z-50">
+      <header className="text-gray-600 body-font sticky top-0 backdrop-blur-3xl z-50">
         <div className="container mx-auto flex flex-wrap p-4 flex-row items-center justify-between">
           <Link
             href="/"
