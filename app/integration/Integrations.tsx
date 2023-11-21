@@ -6,9 +6,11 @@ export default async function Integrations() {
   return (
     <div className="container px-5 py-10 mx-auto">
       <div className="flex md:flex-row flex-col -m-4">
-        {integrations.map((integration) => (
-          <FeatureCard key={integration._id} integration={integration} />
-        ))}
+        {integrations &&
+          integrations.length > 0 &&
+          integrations.map((integration) => (
+            <FeatureCard key={integration._id} integration={integration} />
+          ))}
       </div>
     </div>
   );
