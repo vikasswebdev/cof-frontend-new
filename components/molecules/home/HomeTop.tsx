@@ -4,34 +4,40 @@ import img from "../../../assets/main/undraw_server_cluster.svg";
 import ButtonLink from "../../atoms/ButtonLink";
 import styles from "../../../styles/Home.module.css";
 
+type CustomStyle = {
+  "--i": number;
+};
+
+const stylesArray: CustomStyle[] = [{ "--i": 1 }, { "--i": 2 }, { "--i": 3 }];
+
 const HomeTop: React.FC = () => {
   return (
     <section className="mx-auto flex p-4 py-20 flex-row items-center min-h-screen justify-center">
       <div className={styles.containerrrr}>
         <div className={styles.glowing}>
-          <span style={{ "--i": 1 }}></span>
-          <span style={{ "--i": 2 }}></span>
-          <span style={{ "--i": 3 }}></span>
+          {stylesArray.map((style, index) => (
+            <span key={index} style={style as any}></span>
+          ))}
         </div>
         <div className={styles.glowing}>
-          <span style={{ "--i": 1 }}></span>
-          <span style={{ "--i": 2 }}></span>
-          <span style={{ "--i": 3 }}></span>
+          {stylesArray.map((style, index) => (
+            <span key={index} style={style as any}></span>
+          ))}
         </div>
         <div className={styles.glowing}>
-          <span style={{ "--i": 1 }}></span>
-          <span style={{ "--i": 2 }}></span>
-          <span style={{ "--i": 3 }}></span>
+          {stylesArray.map((style, index) => (
+            <span key={index} style={style as any}></span>
+          ))}
         </div>
         <div className={styles.glowing}>
-          <span style={{ "--i": 1 }}></span>
-          <span style={{ "--i": 2 }}></span>
-          <span style={{ "--i": 3 }}></span>
+          {stylesArray.map((style, index) => (
+            <span key={index} style={style as any}></span>
+          ))}
         </div>
         <div className={styles.glowing}>
-          <span style={{ "--i": 1 }}></span>
-          <span style={{ "--i": 2 }}></span>
-          <span style={{ "--i": 3 }}></span>
+          {stylesArray.map((style, index) => (
+            <span key={index} style={style as any}></span>
+          ))}
         </div>
       </div>
       <div
