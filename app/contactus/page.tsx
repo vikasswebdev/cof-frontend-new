@@ -1,11 +1,16 @@
+"use client";
 import { Metadata } from "next";
 import ContactForm from "./ContactForm";
+import { useSearchParams } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "Contact us",
-};
+// export const metadata: Metadata = {
+//   title: "Contact us",
+// };
 
 const Contactus: React.FC = () => {
+  // const searchParams = useSearchParams();
+  // console.log("searchParams", searchParams.get("int"));
+
   return (
     <>
       <section className="text-gray-600 body-font relative">
