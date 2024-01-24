@@ -22,10 +22,9 @@ const ContactForm = () => {
         toast.warning("Enter email address correctly!");
         return;
       }
+      return;
       const contactData: Contact = { name, email, message };
-
       const response = await api.contact.contactUs(contactData);
-
       if (response.success) {
         toast.success(response.message);
         setName("");

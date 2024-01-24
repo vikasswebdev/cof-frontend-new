@@ -14,27 +14,27 @@ function generateUrlArrayFromBlogs(
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const blogs = await api.blog.getBlogs();
+  // const blogs = await api.blog.getBlogs();
 
-  const blogArr = generateUrlArrayFromBlogs(blogs);
+  // const blogArr = generateUrlArrayFromBlogs(blogs);
 
   return [
     {
       url: `${EXTERNAL_DATA_URL}`,
       lastModified: new Date(),
     },
-    {
-      url: `${EXTERNAL_DATA_URL}/contactus`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${EXTERNAL_DATA_URL}/integration`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${EXTERNAL_DATA_URL}/blog`,
-      lastModified: new Date(),
-    },
-    ...blogArr,
+    // {
+    //   url: `${EXTERNAL_DATA_URL}/contactus`,
+    //   lastModified: new Date(),
+    // },
+    // {
+    //   url: `${EXTERNAL_DATA_URL}/integration`,
+    //   lastModified: new Date(),
+    // },
+    // {
+    //   url: `${EXTERNAL_DATA_URL}/blog`,
+    //   lastModified: new Date(),
+    // },
+    // ...blogArr,
   ];
 }
